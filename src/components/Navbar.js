@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import './Navbar.css';
 
 function Navbar() {
@@ -6,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" style={{ backgroundColor: '#02080fff' }}>
       <div className="container">
         {/* Brand */}
-        <Link className="navbar-brand fw-bold" to="/">Kavindya</Link>
+        <a className="navbar-brand fw-bold" href="#/">Kavindya</a>
 
         {/* Hamburger Button */}
         <button 
@@ -25,19 +24,19 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <a className="nav-link" href="#/">Home</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">Qualifications and Certifications</Link>
+              <a className="nav-link" href="#/about">Qualifications and Certifications</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/skills">Work Experience</Link>
+              <a className="nav-link" href="#/skills">Work Experience</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">Projects</Link>
+              <a className="nav-link" href="#/projects">Projects</a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact Me and Resume</Link>
+              <a className="nav-link" href="#/contact">Contact Me and Resume</a>
             </li>
           </ul>
         </div>
