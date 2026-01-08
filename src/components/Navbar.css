@@ -1,0 +1,82 @@
+/* Brand name - modern gradient text */
+.navbar-brand {
+  margin-right: 50px;
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a78bfa, #ec4899); /* purple to pink */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #e0e0ff; /* light lavender */
+  font-size: 18px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+/* Hover effect with underline animation */
+.navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #a78bfa;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff9cee;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  color: #ff9cee;
+  font-weight: 600;
+}
+
+/* Navbar container */
+.navbar {
+  background: linear-gradient(135deg, #0d1b2a, #1e2a47); /* deep dark blue gradient */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0;
+}
+
+/* Navbar toggler (hamburger) */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
+
+/* Collapse menu animation */
+.navbar-collapse {
+  transition: all 0.4s ease;
+}
+
+/* Optional: spacing & alignment */
+.navbar-nav {
+  align-items: center;
+  gap: 15px; /* space between links */
+}
