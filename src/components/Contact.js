@@ -1,3 +1,5 @@
+import React from "react";
+
 function Contact() {
   return (
     <section
@@ -15,14 +17,21 @@ function Contact() {
         <div className="contact-panel row align-items-center p-4 p-md-5 rounded-4">
           {/* LEFT – PROFILE IMAGE */}
           <div className="col-md-4 text-center mb-4 mb-md-0">
-            <img src="/profile.jpg" alt="Kavindya" className="profile-img" />
+            <img
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
+              alt="Kavindya"
+              className="profile-img"
+            />
           </div>
 
           {/* RIGHT – ICON LINKS */}
           <div className="col-md-8">
             <div className="icon-grid">
               <a href="mailto:kavindyagnanathilake@gmail.com">
-                <img src="/logos/email.png" alt="Email" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/email.png`}
+                  alt="Email"
+                />
               </a>
 
               <a
@@ -30,7 +39,10 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/logos/linkedin.png" alt="LinkedIn" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/linkedin.png`}
+                  alt="LinkedIn"
+                />
               </a>
 
               <a
@@ -38,7 +50,10 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/logos/github.png" alt="GitHub" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/github.png`}
+                  alt="GitHub"
+                />
               </a>
 
               <a
@@ -46,7 +61,10 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/logos/medium.png" alt="Medium" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/medium.png`}
+                  alt="Medium"
+                />
               </a>
 
               <a
@@ -54,7 +72,10 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/logos/instagram.png" alt="Instagram" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/instagram.png`}
+                  alt="Instagram"
+                />
               </a>
 
               <a
@@ -62,14 +83,17 @@ function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="/logos/whatsapp.png" alt="WhatsApp" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/logos/whatsapp.png`}
+                  alt="WhatsApp"
+                />
               </a>
             </div>
 
             {/* CV BUTTON */}
             <div className="text-center mt-4">
               <a
-                href="/Kavindya_Gnanathilake_CV.pdf"
+                href={`${process.env.PUBLIC_URL}/Kavindya_Gnanathilake_CV.pdf`}
                 download
                 className="cv-btn"
               >

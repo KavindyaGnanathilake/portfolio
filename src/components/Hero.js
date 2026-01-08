@@ -1,7 +1,7 @@
 function Hero() {
   return (
     <>
-      {/* HERO SECTION */}
+            {/* HERO SECTION */}
       <section
         id="hero"
         style={{
@@ -13,7 +13,7 @@ function Hero() {
           fontFamily: "'Poppins', sans-serif",
         }}
       >
-        <div className="container h-100">
+                <div className="container h-100">
           <div className="row align-items-center h-100">
             {/* Left */}
             <div className="col-md-6 text-center text-md-start">
@@ -49,17 +49,27 @@ function Hero() {
               </p>
 
               <div className="d-flex flex-wrap gap-3">
+                {/* Contact Button */}
                 <a href="/contact" className="btn gradient-btn">
                   Contact Me
+                </a>
+
+                {/* CV Download Button */}
+                <a
+                  href={`${process.env.PUBLIC_URL}/Kavindya_Gnanathilake_CV.pdf`}
+                  download
+                  className="btn gradient-btn"
+                >
+                  View my Resume
                 </a>
               </div>
             </div>
 
             {/* Right */}
-            <div className="col-md-6 text-center mt-5 mt-md-5">
+            <div className="col-md-6 text-center mt-5 mt-md-0">
               <div className="hero-image-container">
                 <img
-                  src="/hero.jpg"
+                  src={`${process.env.PUBLIC_URL}/hero.jpg`}
                   alt="Kavindya"
                   className="img-fluid rounded shadow-lg floating-img"
                   style={{ maxHeight: "430px" }}
@@ -96,7 +106,7 @@ function Hero() {
         </div>
       </section>
 
-      {/* SKILLS SNAPSHOT */}
+            {/* SKILLS SNAPSHOT */}
       <section
         className="py-5"
         style={{ backgroundColor: "#0f172a", color: "#fff" }}
@@ -105,19 +115,19 @@ function Hero() {
           <h2 className="fw-bold mb-4 theme-title">Skills Snapshot</h2>
           <div className="row g-4 justify-content-center">
             {[
-              { name: "Python", src: "/logos/python.png" },
-              { name: "Java", src: "/logos/java.png" },
-              { name: "SQL", src: "/logos/sql.png" },
-              { name: "React", src: "/logos/react.png" },
-              { name: "Spring Boot", src: "/logos/springboot.png" },
-              { name: "Machine Learning", src: "/logos/ml.png" },
-              { name: "Git & GitHub", src: "/logos/github.png" },
-              { name: "REST APIs", src: "/logos/api.png" },
+              { name: "Python", src: "logos/python.png" },
+              { name: "Java", src: "logos/java.png" },
+              { name: "SQL", src: "logos/sql.png" },
+              { name: "React", src: "logos/react.png" },
+              { name: "Spring Boot", src: "logos/springboot.png" },
+              { name: "Machine Learning", src: "logos/ml.png" },
+              { name: "Git & GitHub", src: "logos/github.png" },
+              { name: "REST APIs", src: "logos/api.png" },
             ].map((skill, i) => (
               <div key={i} className="col-4 col-sm-3 col-md-2">
                 <div className="skill-badge-logo d-flex align-items-center justify-content-center">
                   <img
-                    src={skill.src}
+                    src={`${process.env.PUBLIC_URL}/${skill.src}`}
                     alt={skill.name}
                     className="img-fluid"
                     style={{ width: "100px", height: "100px", objectFit: "contain" }}

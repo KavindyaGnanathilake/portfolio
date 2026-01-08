@@ -20,7 +20,7 @@ function About() {
               {/* Logo */}
               <div className="me-4 flex-shrink-0">
                 <img
-                  src="/logos/sliit.png" // replace with your logo path
+                  src={`${process.env.PUBLIC_URL}/logos/sliit.png`}
                   alt="SLIIT Logo"
                   style={{ width: "80px", height: "80px", objectFit: "contain" }}
                 />
@@ -49,7 +49,7 @@ function About() {
               {/* Logo */}
               <div className="me-4 flex-shrink-0">
                 <img
-                  src="/logos/eusl.png" // replace with your logo path
+                  src={`${process.env.PUBLIC_URL}/logos/eusl.png`}
                   alt="EUSL Logo"
                   style={{ width: "80px", height: "80px", objectFit: "contain" }}
                 />
@@ -89,6 +89,25 @@ function About() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CV Download Button */}
+        <div className="text-center mt-5">
+          <a
+            href={`${process.env.PUBLIC_URL}/transcript.pdf`}
+            download
+            className="btn btn-primary"
+            style={{
+              background: "linear-gradient(135deg, #cd23b3, #8a2be2)",
+              border: "none",
+              padding: "12px 24px",
+              borderRadius: "8px",
+              color: "#fff",
+              fontWeight: "600",
+            }}
+          >
+            Download Transcript
+          </a>
         </div>
       </div>
 
